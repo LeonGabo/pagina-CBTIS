@@ -1,0 +1,19 @@
+body{background-color: #F79F81;
+}
+div{text-align: center;
+}
+p#titulos{font-size: 25px;
+	color: #0B0B61;
+}
+.zoom{/*aumentamos la anchura y altura durante 2 segundos*/
+	transition: width 2s, height 2s, transform 2s;
+	-moz-transition: width 2s, height 2s, -moz-transform 2s;
+	-webkit-transition: width 2s, heihgt 2s, -webkit-transform 2s;
+	-o-transition: width 2s, height 2s, -o-transform 2s;
+}
+.zoom:hover{/*transformamos el elemento al pasar el mouse por encima al doble de su tamaño con scale (2).*/
+	transform: scale(2);
+	-moz-transform: scale(2); /*Firefox*/
+	-webkit-transform: scale(2); /*chrome - Safari*/
+	-o-transform : scale(2); /*Opera*/
+}
